@@ -85,8 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 
   
 
-/* Tablet/desktop Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px){
+/* Tablet desktop Styles */
+@media only screen and (min-width: 401px){
   .exp,
   .proj {
     width: 50%;
@@ -97,10 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   .page {
     width: 960px;
     margin: 0 auto;
-  }
-  .exp,
-  .proj {
-    width: 50%;
   }
 }
 
