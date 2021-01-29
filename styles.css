@@ -1,56 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  list-style-type: square;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #25c405;
+  height: 50px;
+}
+
+.links a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #25c405;
+}
+
+.links a:hover {
+  background-color: rgb(41, 240, 68);
+}
+
+.active {
+  background-color: #c47705;
+}
+
+.header {
+  background-color: #B2D6FF;
+  font-size: 2.2em;
+  text-align: center;
+  width: 100%;
+}
+
+.about {
+  background-color: #F09A9D;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp{
+  background-color: red;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj{
+  background-color: greenyellow;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     color: #414141;
-    background-color: #1b249e;
+    background-color: #000000;
     font-size: 18px;
-}
-h1 {
-    font-size: 2.2em;
-    padding: 50px;
-    border: 1px solid #5D6063;
-    text-align: center;
 }
 h2 {
     font-size: 1.8em;
-  }
-  h1, h2, h3, h4, h5, h6 {
+}
+h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica", "Arial", sans-serif;
-  }
+}
 
-  ol {
-    list-style-type: square;
-    display: inline;
-    background-color: #0c0c0c;
-    margin: 0;
-    padding: 0;
-  }
 
-  .left{
-    padding: 20px;
-    text-align: left;
   
-    width: 200px;
-  }
 
-  .links{
-    float: left;
+/* Tablet/desktop Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px){
+  .exp,
+  .proj {
+    width: 50%;
   }
+}
+
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .exp,
+  .proj {
+    width: 50%;
+  }
+}
+
   
-  .links a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .links a:hover {
-    background-color: rgb(240, 41, 41);
-  }
-
-  .active {
-    background-color: #c47705;
-  }
-
-  #id{
-      color: aqua;
-  }
